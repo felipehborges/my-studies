@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background-color: aliceblue;
+            text-decoration: none;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px 1px rgb(0 0 0 / 48%);
+        }
+
+        header > h1 {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: pink;
+            padding: 10px;
+            box-shadow: 3px 3px 5px 1px rgb(0 0 0 / 48%);
+            border-radius: 10px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            padding-right: 10px;
+            color: red;
+        }
+
+        nav > a:hover {
+            font-weight: bold;
+            color: darkred;
+        }
+
+        main {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px 1px rgb(0 0 0 / 48%);
+        }
+
+        article > aside {
+            font-size: small;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            width: 50%;
+            font-weight: lighter;
+            padding: 5px;
+            margin: 20px auto;
+            box-shadow: 3px 3px 5px 1px rgb(0 0 0 / 48%);
+            border-radius: 5px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+    <title>Grouping tags</title>
+</head>
+<body>
+    <header>
+        <h1>Site de Felipe Hamasaki</h1>
+        <nav>
+            <a href="#">Página inicial</a>
+            <a href="#">Notícias</a>
+            <a href="#">Países</a>
+            <a href="#">Fale conosco</a>
+            <a href="#">Ajuda</a>
+        </nav>
+    </header>
+    <main>
+        <section id="brnews">
+            <article>
+                <h2>Notícias do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, unde, voluptatum quo consectetur adipisci dolorum libero nobis iste totam sint fugit deserunt aut. Ut quaerat nulla voluptates. Neque, ipsum dolores.</p>
+                <aside>
+                    Artigo escrito por Jango da Silva
+                </aside>
+            </article>
+        </section>
+        <section id="generalnews">
+            <article>
+                <h2>Notícias do mundo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corporis ullam amet accusamus, eos ex maxime impedit vel, temporibus quas aperiam eaque quam corrupti rerum, inventore cumque eius harum tempore!</p>
+                <aside>
+                    Artigo escrito por Dwayne Howard
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Felipe Hamasaki</p>
+    </footer>
+</body>
+</html>

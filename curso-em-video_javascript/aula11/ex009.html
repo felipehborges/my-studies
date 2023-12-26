@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-image: linear-gradient(to left, lightyellow, lightgreen);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #res {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidades</h1>
+    <p>Veja se você é um brasileiro ou estrangeiro: </p>
+    País: <input type="text" id="txtnac">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+            var nac = document.querySelector("#txtnac")
+            var res = document.querySelector("#res")
+            var país = nac.value
+            res.innerHTML = (`Seu país é <strong>${país}</strong>.`)
+            if (país == "Brasil") {
+                res.innerHTML += '<p>Você é brasileiro!</p>'
+            } else {
+                res.innerHTML += '<p>Você é estrangeiro!</p>'
+            }
+        }
+    </script>
+</body>
+</html>

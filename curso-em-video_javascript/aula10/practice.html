@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+            background-color: lightblue;
+        }
+
+        #article {
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 5px black;
+            padding: 20px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Only practicing</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis eum cum explicabo expedita numquam unde sint ut omnis deserunt, porro debitis quod eos optio laboriosam sed assumenda delectus, aspernatur vel!</p>
+    <h2>Second title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quae soluta quidem minima id repellat quis adipisci explicabo iusto, nesciunt recusandae ratione eos vitae corrupti. Doloremque voluptate quia labore cumque!</p>
+    
+    <div id="article">
+        <h2>Important</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, assumenda. Nulla deleniti sunt explicabo rerum molestias, perferendis necessitatibus nesciunt.</p>
+    </div>
+    
+    <script>
+        let important = document.querySelector('div#article')
+        document.write(`Está escrito assim: ${important.innerText}`)
+    </script>
+</body>
+</html>

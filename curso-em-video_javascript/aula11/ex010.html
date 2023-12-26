@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        body {
+            background-color: lightgreen;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h<br>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+    </div> <!-- não tem nada na div de propósito, pois ela vai ser "substituída" pela mensagem lá embaixo no javascript -->
+
+    <script>
+        function calcular() {
+            var txtv = document.querySelector('#txtvel')
+            var res = document.querySelector('#res')
+            var vel = Number(txtv.value) // transformar o conteúdo da caixa de texto (input) em número
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel} km/h</strong></p>` // innerHTML porque vai substituir oq tem na div (nada) pela mensagem
+            if (vel > 60) {
+                res.innerHTML += `<p>Você está MULTADO por excesso de velocidade!</p>` // tem que ser o += porque se não apaga a mensagem anterior
+                res.innerHTML += `<p>A multa chegará em breve no seu endereço.</p>`
+            }
+
+        }
+    </script>
+</body>
+</html>
