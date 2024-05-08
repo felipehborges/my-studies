@@ -55,16 +55,80 @@ export {}
 //     }
 // }
 
-class Person {
-    constructor(
-        private _id: number,
-        public firstName: string,
-        public lastName: string,
-        public age: number
-    ) {
-        this._id = _id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-    }
-}
+// class Player {
+//     protected _score: number;
+//     constructor(
+//         private _id: number,
+//         public firstName: string,
+//         public lastName: string,
+//         public age: number
+//     ) {}
+// }
+
+// class SuperPlayer extends Player {
+//     public isAdmin: boolean = true;
+//     score = this._score;
+// }
+
+// // ***************** Implementing Interfaces *****************
+
+// interface Colorful {
+//     color: string;
+// }
+
+// interface Premium {
+//     isPremium: boolean;
+// }
+
+// interface Printable {
+//     print(): void;
+// }
+
+// class Shirt implements Colorful {
+//     color: string;
+// }
+
+// class Jacket implements Colorful, Premium, Printable {
+//     color: string;
+//     isPremium: boolean;
+
+//     print() {
+//         console.log('This is a jacket');
+//     }
+// }
+
+// abstract class Employee {
+//     constructor(
+//         public firstName: string, public lastName: string
+//     ) {}
+//     greet() {
+//         console.log('Hi')
+//     }
+//     abstract getPay(): number;
+// }
+
+// class FullTimeEmployee extends Employee {
+//     constructor(
+//         firstName: string, lastName: string, private salary: number
+//     ) {
+//         super(firstName, lastName);
+//     }
+//     getPay(): number {
+//         return this.salary;
+//     }
+// }
+
+// class PartTimeEmployee extends Employee {
+//     constructor(
+//         firstName: string, lastName: string, private hourlyRate: number, private hoursWorked: number
+//     ) {
+//         super(firstName, lastName);
+//     }
+
+//     getPay(): number {
+//         return this.hourlyRate * this.hoursWorked;
+//     }
+// }
+
+// const betty = new FullTimeEmployee('Betty', 'Sue', 50000);
+// const john = new PartTimeEmployee('John', 'Doe', 30, 20);

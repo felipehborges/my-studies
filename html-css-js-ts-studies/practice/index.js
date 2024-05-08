@@ -1,11 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Philosopher = /** @class */ (function () {
-    function Philosopher(first, last) {
-        this.first = first;
-        this.last = last;
+var System = /** @class */ (function () {
+    function System(programmingLanguages, programmers, paymentSystem) {
+        this.programmingLanguages = programmingLanguages;
+        this.programmers = programmers;
+        this.paymentSystem = paymentSystem;
     }
-    return Philosopher;
+    return System;
 }());
-var philosopher1 = new Philosopher('Immanuel', 'Kant');
-console.log(philosopher1);
+var sci2 = new System(['JavaScript', 'TypeScript'], ['Brendan Eich', 'Anders Hejlsberg'], true);
+console.log(sci2);
+console.log(sci2.programmingLanguages);
+console.log(sci2.programmers);
+console.log(sci2.paymentSystem);
