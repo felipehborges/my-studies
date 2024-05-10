@@ -132,3 +132,47 @@ export {}
 
 // const betty = new FullTimeEmployee('Betty', 'Sue', 50000);
 // const john = new PartTimeEmployee('John', 'Doe', 30, 20);
+
+// // ***************** Generics *****************
+
+// const numberIndentity = (item: number): number => {
+//     return item;
+// }
+// const stringIdentity = (item: string): string => {
+//     return item;
+// }
+// const booleanIdentity = (item: boolean): boolean => {
+//     return item;
+// }
+
+// interface Employee {
+//     name: string;
+//     age: number;
+//     isAllowed: boolean;
+// }
+
+// const identity = <T>(item: T): T => {
+//     return item;
+// }
+
+// identity<number>(1);
+// // const identity: <number>(item: number) => number
+// identity<string>('Hello');
+// // const identity: <string>(item: string) => string
+// identity<boolean>(true);
+// // const identity: <boolean>(item: boolean) => boolean
+
+// identity('xablau');
+// // const identity: <"xablau">(item: "xablau") => "xablau"
+
+// identity<Employee>({ name: 'John', age: 30, isAllowed: true });
+// // const identity: <Employee>(item: Employee) => Employee
+
+function getRandomElement<T>(list: Array<T>): T {
+    const randIdx = Math.floor(Math.random() * list.length);
+    return list[randIdx];
+}
+
+getRandomElement<string>(['a', 'b', 'c']);
+getRandomElement<number>([1, 2, 3]);
+getRandomElement<boolean>([true, false]);
